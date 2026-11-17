@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogita Garg | B.Tech CSE Portfolio</title>
+  <meta name="description" content="Portfolio of Yogita Garg, B.Tech CSE student at JECRC University, Jaipur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme switch: a hidden checkbox, controlled by the label in the nav (no JavaScript) -->
+  <input type="checkbox" id="theme" class="sr">
+
+  <div class="progress"></div>
+  <a class="skip" href="#home">Skip to content</a>
+
+  <header class="nav">
+    <a class="brand" href="#home">Yogita Garg</a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <label class="switch" for="theme" title="Switch light / dark theme"><span class="sr">Switch light or dark theme</span><span class="dot"></span></label>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="hello">Hi, I am</p>
+          <h1><span>Yogita Garg</span></h1>
+          <p class="role">A
+            <span class="words" aria-label="CS student, C++ learner, web builder, security enthusiast">
+              <span>CS student</span><span>C++ learner</span><span>web builder</span><span>security enthusiast</span>
+            </span>
+          </p>
+          <p class="lead">B.Tech CSE student at JECRC University, Jaipur. I am learning to write clean code, build for the web and understand how systems stay secure.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <figure class="portrait">
+          <div class="frame">
+            <span class="initials" aria-hidden="true">YG</span>
+            <!-- Save your photo as yogita.jpg in this folder -->
+            <img src="yogita.jpeg" alt="Portrait of Yogita Garg" width="640" height="800">
+          </div>
+          <figcaption>JECRC University, Jaipur</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap split">
+        <h2>A student who likes knowing how things work.</h2>
+        <div class="prose">
+          <p>I am currently studying B.Tech in Computer Science and Engineering at JECRC University, Jaipur.</p>
+          <p>I enjoy programming, web development and cybersecurity. Right now I spend my time on C++, HTML, CSS, JavaScript and Python, building small projects and asking better questions each week.</p>
+          <dl class="facts">
+            <div><dt>Studying</dt><dd>B.Tech CSE</dd></div>
+            <div><dt>Based in</dt><dd>Jaipur</dd></div>
+            <div><dt>Exploring</dt><dd>Web, security</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <p class="sub">Pick a category to filter. The bars show where I am today, and they keep growing.</p>
+
+        <!-- Filter: radio buttons + labels (no JavaScript) -->
+        <input class="sr" type="radio" name="f" id="f-all" checked>
+        <input class="sr" type="radio" name="f" id="f-code">
+        <input class="sr" type="radio" name="f" id="f-web">
+        <input class="sr" type="radio" name="f" id="f-sec">
+        <div class="tabs">
+          <label for="f-all">All</label>
+          <label for="f-code">Programming</label>
+          <label for="f-web">Web</label>
+          <label for="f-sec">Security</label>
+        </div>
+
+        <div class="skills">
+          <article class="skill" data-c="code" style="--v:70%"><h3>C++</h3><p>Core logic, loops, functions, OOP basics.</p><div class="meter"><span></span></div><small>70%</small></article>
+          <article class="skill" data-c="code" style="--v:70%"><h3>Python</h3><p>Scripting, APIs and backend basics.</p><div class="meter"><span></span></div><small>70%</small></article>
+          <article class="skill" data-c="web" style="--v:85%"><h3>HTML</h3><p>Semantic, accessible page structure.</p><div class="meter"><span></span></div><small>85%</small></article>
+          <article class="skill" data-c="web" style="--v:75%"><h3>CSS</h3><p>Layouts, responsive design, animations.</p><div class="meter"><span></span></div><small>75%</small></article>
+          <article class="skill" data-c="web" style="--v:60%"><h3>JavaScript</h3><p>DOM, events and small interactive features.</p><div class="meter"><span></span></div><small>60%</small></article>
+          <article class="skill" data-c="sec" style="--v:50%"><h3>Cybersecurity</h3><p>Security basics, safe coding, how attacks work.</p><div class="meter"><span></span></div><small>50%</small></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="sub">Things I have built while learning.</p>
+        <div class="projects">
+          <article class="project">
+            <div class="thumb t1" aria-hidden="true"></div>
+            <h3>Smart Traffic Management System</h3>
+            <p>A practice project made for the Smart India Hackathon, exploring how traffic flow can be managed smartly.</p>
+            <ul class="chips"><li>Python</li><li>APIs</li></ul>
+          </article>
+          <article class="project">
+            <div class="thumb t2" aria-hidden="true"></div>
+            <h3>MoodMate</h3>
+            <p>MoodMate is an AI-powered emotional companion that understands your feelings, offers personalized conversations, detects moods, and provides supportive wellness activities through Gemini AI. </p>
+            <ul class="chips"><li>HTML</li><li>CSS</li></ul>
+          </article>
+          <article class="project">
+            <div class="thumb t3" aria-hidden="true"></div>
+            <h3>Medikiosk</h3>
+            <p>Our Project made for Smart India Hackathon , a patient Case taking software.</p>
+            <ul class="chips"><li>C++</li><li>Security</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section alt" id="education">
+      <div class="wrap">
+        <h2>Education</h2>
+        <ol class="timeline">
+          <li><span class="when">Present</span><div><h3>JECRC University, Jaipur</h3><p>B.Tech, Computer Science and Engineering</p></div></li>
+          <li><span class="when">Completed</span><div><h3>Ashish Memorial Public School</h3><p>School education, Hindaun City</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section class="section" id="quiz">
+      <div class="wrap">
+        <h2>Test Your Knowledge</h2>
+        <p class="sub">Five quick questions on web development, C++ and cybersecurity. Answer all of them, then submit.</p>
+
+       <form class="quiz" id="quizForm" action="#" method="get" novalidate>
+          <div class="quiz-top">
+            <span id="quizCount">0 of 5 answered</span>
+            <div class="bar" aria-hidden="true"><span id="quizBar"></span></div>
+          </div>
+
+          <fieldset class="q">
+            <legend><span>1</span>Which HTML tag creates the largest heading?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q1" value="0"><span>&lt;h6&gt;</span></label>
+              <label class="opt"><input type="radio" name="q1" value="1"><span>&lt;head&gt;</span></label>
+              <label class="opt"><input type="radio" name="q1" value="2"><span>&lt;h1&gt;</span></label>
+              <label class="opt"><input type="radio" name="q1" value="3"><span>&lt;header&gt;</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q">
+            <legend><span>2</span>Which CSS property changes the colour of text?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q2" value="0"><span>color</span></label>
+              <label class="opt"><input type="radio" name="q2" value="1"><span>font-color</span></label>
+              <label class="opt"><input type="radio" name="q2" value="2"><span>text-style</span></label>
+              <label class="opt"><input type="radio" name="q2" value="3"><span>foreground</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q">
+            <legend><span>3</span>Which symbol ends a statement in C++?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q3" value="0"><span>.</span></label>
+              <label class="opt"><input type="radio" name="q3" value="1"><span>:</span></label>
+              <label class="opt"><input type="radio" name="q3" value="2"><span>,</span></label>
+              <label class="opt"><input type="radio" name="q3" value="3"><span>;</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q">
+            <legend><span>4</span>In JavaScript, which keyword declares a variable that cannot be reassigned?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q4" value="0"><span>var</span></label>
+              <label class="opt"><input type="radio" name="q4" value="1"><span>const</span></label>
+              <label class="opt"><input type="radio" name="q4" value="2"><span>let</span></label>
+              <label class="opt"><input type="radio" name="q4" value="3"><span>static</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q">
+            <legend><span>5</span>In cybersecurity, what is phishing?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="q5" value="0"><span>Scanning a network for open ports</span></label>
+              <label class="opt"><input type="radio" name="q5" value="1"><span>Backing up files to the cloud</span></label>
+              <label class="opt"><input type="radio" name="q5" value="2"><span>Tricking people into revealing sensitive information</span></label>
+              <label class="opt"><input type="radio" name="q5" value="3"><span>Encrypting data with a secret key</span></label>
+            </div>
+          </fieldset>
+
+          <div class="quiz-actions">
+            <button class="btn btn-primary" type="submit">Submit Answers</button>
+            <button class="btn btn-ghost" type="button" id="restartBtn">Restart Quiz</button>
+          </div>
+          <p class="quiz-msg" id="quizMsg" role="alert"></p>
+
+          <div class="result" id="result" hidden aria-live="polite">
+            <p class="score" id="score"></p>
+            <p class="result-msg" id="resultMsg"></p>
+            <ol class="review" id="review"></ol>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="wrap split">
+        <div>
+          <h2>Let us talk.</h2>
+          <p class="sub">Open to internships, hackathon teams and learning together.</p>
+          <div class="reach">
+            <!-- Replace with your real email and LinkedIn URL -->
+            <a class="btn btn-ghost" href="yogitagarg29@gmail.com">Email me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/yogita-g-aa40b4241/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <form class="form" action="yogitagarg29@gmail.com" method="post" enctype="text/plain">
+          <label>Your name<input name="Name" required autocomplete="name"></label>
+          <label>Message<textarea name="Message" rows="4" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><p>Yogita Garg, B.Tech CSE, JECRC University</p><a href="#home">Back to top</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
